@@ -1,0 +1,123 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f6f8ff, #eef3ff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-family: "Pacifico", cursive;
+    color: #007bff;
+  }
+  
+  nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  nav a:hover, nav a.active {
+    color: #007bff;
+  }
+  
+  .donate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+  }
+  
+  .donate-box {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .amount-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+  
+  .amount, #customBtn {
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .amount.active, .amount:hover, #customBtn:hover {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  input, textarea {
+    width: 96%;
+    padding: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  
+  #donateBtn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #007bff, #00b4d8);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #donateBtn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  }
+  
+  .thanks {
+    font-style: italic;
+    margin-top: 15px;
+    color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    font-size: 14px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+  }
+  
+  @media (max-width: 600px) {
+    .donate-box {
+      padding: 20px;
+    }
+    .amount-buttons {
+      gap: 8px;
+    }
+  }
+  
